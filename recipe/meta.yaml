@@ -12,7 +12,7 @@ package:
 
 source:
   fn: {{ pypi_name }}-{{ version }}.{{ compress_type }}
-  url: https://pypi.io/packages/source/{{ pypi_name[0] }}/{{ pypi_name }}/{{ pypi_name }}-{{ version }}.{{ comprss_type }}
+  url: https://pypi.io/packages/source/{{ pypi_name[0] }}/{{ pypi_name }}/{{ pypi_name }}-{{ version }}.{{ compress_type }}
   {{ hash_type }}: {{ hash_val }}
   patches:
     - louds-trie.patch  # [win and py35]
