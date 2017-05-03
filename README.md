@@ -11,6 +11,18 @@ Summary: Static memory-efficient & fast Trie-like structures for Python (based o
 
 
 
+Current build status
+====================
+
+Linux: [![Circle CI](https://circleci.com/gh/conda-forge/python-marisa-trie-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/python-marisa-trie-feedstock)
+OSX: [![TravisCI](https://travis-ci.org/conda-forge/python-marisa-trie-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/python-marisa-trie-feedstock)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/python-marisa-trie-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/python-marisa-trie-feedstock/branch/master)
+
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/python-marisa-trie/badges/version.svg)](https://anaconda.org/conda-forge/python-marisa-trie)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/python-marisa-trie/badges/downloads.svg)](https://anaconda.org/conda-forge/python-marisa-trie)
+
 Installing python-marisa-trie
 =============================
 
@@ -31,7 +43,6 @@ It is possible to list all of the versions of `python-marisa-trie` available on 
 ```
 conda search python-marisa-trie --channel conda-forge
 ```
-
 
 
 About conda-forge
@@ -67,18 +78,6 @@ Terminology
 
 **conda-forge** - the place where the feedstock and smithy live and work to
                   produce the finished article (built conda distributions)
-
-Current build status
-====================
-
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/python-marisa-trie-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/python-marisa-trie-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/python-marisa-trie-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/python-marisa-trie-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/python-marisa-trie-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/python-marisa-trie-feedstock/branch/master)
-
-Current release info
-====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/python-marisa-trie/badges/version.svg)](https://anaconda.org/conda-forge/python-marisa-trie)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/python-marisa-trie/badges/downloads.svg)](https://anaconda.org/conda-forge/python-marisa-trie)
 
 
 Updating python-marisa-trie-feedstock
