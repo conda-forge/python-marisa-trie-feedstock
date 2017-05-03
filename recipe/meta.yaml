@@ -15,7 +15,7 @@ source:
   url: https://pypi.io/packages/source/{{ pypi_name[0] }}/{{ pypi_name }}/{{ pypi_name }}-{{ version }}.{{ bundle }}
   {{ hash_type }}: {{ hash }}
   patches:
-    - louds-trie.patch  # [win and py35]
+    - louds-trie.patch  # [win and py>34]
     # patch for windows build issue; see https://github.com/pytries/marisa-trie/commit/1883107b420e19b30f18b1f92b19d7f9d536fa5d
 
 build:
