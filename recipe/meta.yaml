@@ -1,9 +1,9 @@
 {% set conda_forge_name = "python-marisa-trie" %}
 {% set pypi_name = "marisa-trie" %}
-{% set version = "0.7.2" %}
+{% set version = "0.7.4" %}
 {% set bundle = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash = "4b39f84c511a6e8e3a060b20bc41ff3b5393cb46381336e2156dc9b2290506b3" %}
+{% set hash = "2a2258eacca9966325f9019378fc4621891f2482bc63e6441f70599595ed97d8" %}
 {% set build = 0 %}
 
 package:
@@ -14,9 +14,6 @@ source:
   fn: {{ pypi_name }}-{{ version }}.{{ bundle }}
   url: https://pypi.io/packages/source/{{ pypi_name[0] }}/{{ pypi_name }}/{{ pypi_name }}-{{ version }}.{{ bundle }}
   {{ hash_type }}: {{ hash }}
-  patches:
-    - louds-trie.patch  # [win and py>34]
-    # patch for windows build issue; see https://github.com/pytries/marisa-trie/commit/1883107b420e19b30f18b1f92b19d7f9d536fa5d
 
 build:
   number: {{ build }}
@@ -28,6 +25,7 @@ requirements:
     - python
     - toolchain
     - setuptools
+    - pytest-runner
 
   run:
     - python
