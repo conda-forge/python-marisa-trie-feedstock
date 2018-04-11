@@ -1,9 +1,9 @@
 {% set conda_forge_name = "python-marisa-trie" %}
 {% set pypi_name = "marisa-trie" %}
-{% set version = "0.7.4" %}
+{% set version = "0.7.5" %}
 {% set bundle = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash = "2a2258eacca9966325f9019378fc4621891f2482bc63e6441f70599595ed97d8" %}
+{% set hash = "c73bc25d868e8c4ea7aa7f1e19892db07bba2463351269b05340ccfa06eb2baf" %}
 {% set build = 0 %}
 
 package:
@@ -16,7 +16,7 @@ source:
   {{ hash_type }}: {{ hash }}
 
 build:
-  number: {{ build }}
+  number: 0
   script:
     - python setup.py install --single-version-externally-managed --record=record.txt
 
