@@ -4,7 +4,6 @@
 {% set bundle = "tar.gz" %}
 {% set hash_type = "sha256" %}
 {% set hash = "c73bc25d868e8c4ea7aa7f1e19892db07bba2463351269b05340ccfa06eb2baf" %}
-{% set build = 0 %}
 
 package:
   name: {{ conda_forge_name }}
@@ -12,19 +11,18 @@ package:
 
 source:
   fn: {{ pypi_name }}-{{ version }}.{{ bundle }}
-  url: https://pypi.io/packages/source/{{ pypi_name[0] }}/{{ pypi_name }}/{{ pypi_name }}-{{ version }}.{{ bundle }}
+  url: https://pypi.org/packages/source/{{ pypi_name[0] }}/{{ pypi_name }}/{{ pypi_name }}-{{ version }}.{{ bundle }}
   {{ hash_type }}: {{ hash }}
 
 build:
   number: 0
-  script:
-    - python setup.py install --single-version-externally-managed --record=record.txt
+  script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
   build:
     - python
+    - pip
     - toolchain
-    - setuptools
     - pytest-runner
 
   run:
