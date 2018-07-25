@@ -18,13 +18,14 @@ source:
 build:
   number: {{ build }}
   script:
-    - python setup.py install --single-version-externally-managed --record=record.txt
+    - python -m pip install --no-deps --ignore-installed .
 
 requirements:
   build:
+    - {{ compiler('c') }}
+  host:
     - python
-    - toolchain
-    - setuptools
+    - pip
     - pytest-runner
 
   run:
@@ -48,3 +49,4 @@ extra:
     - pmlandwehr
     - kmike
     - superbobry
+    - mariusvniekerk
