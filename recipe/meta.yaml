@@ -1,24 +1,16 @@
-{% set conda_forge_name = "python-marisa-trie" %}
-{% set pypi_name = "marisa-trie" %}
-{% set version = "0.7.4" %}
-{% set bundle = "tar.gz" %}
-{% set hash_type = "sha256" %}
-{% set hash = "2a2258eacca9966325f9019378fc4621891f2482bc63e6441f70599595ed97d8" %}
-{% set build = 1 %}
+{% set version = "0.7.5" %}
 
 package:
-  name: {{ conda_forge_name }}
+  name: marisa-trie
   version: {{ version }}
 
 source:
-  fn: {{ pypi_name }}-{{ version }}.{{ bundle }}
-  url: https://pypi.io/packages/source/{{ pypi_name[0] }}/{{ pypi_name }}/{{ pypi_name }}-{{ version }}.{{ bundle }}
-  {{ hash_type }}: {{ hash }}
+  url: https://pypi.io/packages/source/m/marisa-trie/marisa-trie-{{ version }}.tar.gz
+  sha256: c73bc25d868e8c4ea7aa7f1e19892db07bba2463351269b05340ccfa06eb2baf
 
 build:
-  number: {{ build }}
-  script:
-    - python -m pip install --no-deps --ignore-installed .
+  number: 1000
+  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv"
 
 requirements:
   build:
@@ -28,7 +20,6 @@ requirements:
     - python
     - pip
     - pytest-runner
-
   run:
     - python
 
