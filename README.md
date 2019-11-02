@@ -1,5 +1,5 @@
-About python-marisa-trie
-========================
+About marisa-trie
+=================
 
 Home: https://github.com/pytries/marisa-trie
 
@@ -14,41 +14,151 @@ Summary: Static memory-efficient & fast Trie-like structures for Python (based o
 Current build status
 ====================
 
-[![Linux](https://img.shields.io/circleci/project/github/conda-forge/python-marisa-trie-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/python-marisa-trie-feedstock)
-[![OSX](https://img.shields.io/travis/conda-forge/python-marisa-trie-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/python-marisa-trie-feedstock)
-[![Windows](https://img.shields.io/appveyor/ci/conda-forge/python-marisa-trie-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/python-marisa-trie-feedstock/branch/master)
+
+<table>
+    
+  <tr>
+    <td>Azure</td>
+    <td>
+      <details>
+        <summary>
+          <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5476&branchName=master">
+            <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/python-marisa-trie-feedstock?branchName=master">
+          </a>
+        </summary>
+        <table>
+          <thead><tr><th>Variant</th><th>Status</th></tr></thead>
+          <tbody><tr>
+              <td>linux_python2.7</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5476&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/python-marisa-trie-feedstock?branchName=master&jobName=linux&configuration=linux_python2.7" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_python3.6</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5476&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/python-marisa-trie-feedstock?branchName=master&jobName=linux&configuration=linux_python3.6" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_python3.7</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5476&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/python-marisa-trie-feedstock?branchName=master&jobName=linux&configuration=linux_python3.7" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_python3.8</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5476&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/python-marisa-trie-feedstock?branchName=master&jobName=linux&configuration=linux_python3.8" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_python2.7</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5476&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/python-marisa-trie-feedstock?branchName=master&jobName=osx&configuration=osx_python2.7" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_python3.6</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5476&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/python-marisa-trie-feedstock?branchName=master&jobName=osx&configuration=osx_python3.6" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_python3.7</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5476&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/python-marisa-trie-feedstock?branchName=master&jobName=osx&configuration=osx_python3.7" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_python3.8</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5476&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/python-marisa-trie-feedstock?branchName=master&jobName=osx&configuration=osx_python3.8" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>win_c_compilervs2008cxx_compilervs2008python2.7</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5476&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/python-marisa-trie-feedstock?branchName=master&jobName=win&configuration=win_c_compilervs2008cxx_compilervs2008python2.7" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>win_c_compilervs2015cxx_compilervs2015python3.6</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5476&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/python-marisa-trie-feedstock?branchName=master&jobName=win&configuration=win_c_compilervs2015cxx_compilervs2015python3.6" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>win_c_compilervs2015cxx_compilervs2015python3.7</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5476&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/python-marisa-trie-feedstock?branchName=master&jobName=win&configuration=win_c_compilervs2015cxx_compilervs2015python3.7" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>win_c_compilervs2015cxx_compilervs2015python3.8</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5476&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/python-marisa-trie-feedstock?branchName=master&jobName=win&configuration=win_c_compilervs2015cxx_compilervs2015python3.8" alt="variant">
+                </a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </details>
+    </td>
+  </tr>
+  <tr>
+    <td>Linux_ppc64le</td>
+    <td>
+      <img src="https://img.shields.io/badge/ppc64le-disabled-lightgrey.svg" alt="ppc64le disabled">
+    </td>
+  </tr>
+</table>
 
 Current release info
 ====================
 
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-python--marisa--trie-green.svg)](https://anaconda.org/conda-forge/python-marisa-trie) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/python-marisa-trie.svg)](https://anaconda.org/conda-forge/python-marisa-trie) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/python-marisa-trie.svg)](https://anaconda.org/conda-forge/python-marisa-trie) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/python-marisa-trie.svg)](https://anaconda.org/conda-forge/python-marisa-trie) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-marisa--trie-green.svg)](https://anaconda.org/conda-forge/marisa-trie) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/marisa-trie.svg)](https://anaconda.org/conda-forge/marisa-trie) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/marisa-trie.svg)](https://anaconda.org/conda-forge/marisa-trie) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/marisa-trie.svg)](https://anaconda.org/conda-forge/marisa-trie) |
 
-Installing python-marisa-trie
-=============================
+Installing marisa-trie
+======================
 
-Installing `python-marisa-trie` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
+Installing `marisa-trie` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
 
 ```
 conda config --add channels conda-forge
 ```
 
-Once the `conda-forge` channel has been enabled, `python-marisa-trie` can be installed with:
+Once the `conda-forge` channel has been enabled, `marisa-trie` can be installed with:
 
 ```
-conda install python-marisa-trie
+conda install marisa-trie
 ```
 
-It is possible to list all of the versions of `python-marisa-trie` available on your platform with:
+It is possible to list all of the versions of `marisa-trie` available on your platform with:
 
 ```
-conda search python-marisa-trie --channel conda-forge
+conda search marisa-trie --channel conda-forge
 ```
 
 
 About conda-forge
 =================
+
+[![Powered by NumFOCUS](https://img.shields.io/badge/powered%20by-NumFOCUS-orange.svg?style=flat&colorA=E1523D&colorB=007D8A)](http://numfocus.org)
 
 conda-forge is a community-led conda channel of installable packages.
 In order to provide high-quality builds, the process has been automated into the
@@ -83,17 +193,17 @@ Terminology
                   produce the finished article (built conda distributions)
 
 
-Updating python-marisa-trie-feedstock
-=====================================
+Updating marisa-trie-feedstock
+==============================
 
-If you would like to improve the python-marisa-trie recipe or build a new
+If you would like to improve the marisa-trie recipe or build a new
 package version, please fork this repository and submit a PR. Upon submission,
 your changes will be run on the appropriate platforms to give the reviewer an
 opportunity to confirm that the changes result in a successful build. Once
 merged, the recipe will be re-built and uploaded automatically to the
 `conda-forge` channel, whereupon the built conda packages will be available for
 everybody to install and use from the `conda-forge` channel.
-Note that all branches in the conda-forge/python-marisa-trie-feedstock are
+Note that all branches in the conda-forge/marisa-trie-feedstock are
 immediately built and any created packages are uploaded, so PRs should be based
 on branches in forks and branches in the main repository should only be used to
 build distinct package versions.
@@ -104,3 +214,12 @@ In order to produce a uniquely identifiable distribution:
  * If the version of a package **is** being increased, please remember to return
    the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string)
    back to 0.
+
+Feedstock Maintainers
+=====================
+
+* [@kmike](https://github.com/kmike/)
+* [@mariusvniekerk](https://github.com/mariusvniekerk/)
+* [@pmlandwehr](https://github.com/pmlandwehr/)
+* [@superbobry](https://github.com/superbobry/)
+
