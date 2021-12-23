@@ -232,6 +232,5 @@ Feedstock Maintainers
 
 * [@kmike](https://github.com/kmike/)
 * [@mariusvniekerk](https://github.com/mariusvniekerk/)
-* [@pmlandwehr](https://github.com/pmlandwehr/)
 * [@superbobry](https://github.com/superbobry/)
 
