@@ -21,6 +21,7 @@ requirements:
     - python
     - pip
     - pytest-runner
+    - setuptools <72.2.0
   run:
     - python
 
@@ -42,3 +43,4 @@ extra:
     - kmike
     - superbobry
     - mariusvniekerk
+    - synapticarbors
