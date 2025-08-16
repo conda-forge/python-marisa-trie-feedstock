@@ -1,4 +1,4 @@
-{% set version = "1.2.1" %}
+{% set version = "1.3.0" %}
 
 package:
   name: marisa-trie
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/m/marisa-trie/marisa_trie-{{ version }}.tar.gz
-  sha256: 3a27c408e2aefc03e0f1d25b2ff2afb85aac3568f6fa2ae2a53b57a2e87ce29d
+  sha256: 39af3060b4ab41a3cce18b1808338db8bf50b6ec4b81be3cc452558aaad95581
 
 build:
   number: 0
