@@ -6,3 +6,6 @@ conda_build:
   pkg_format: '2'
 bot:
   automerge: true
+provider:
+  linux_aarch64: default
+  osx_arm64: default
