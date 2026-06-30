@@ -28,6 +28,9 @@ requirements:
 test:
   imports:
     - marisa_trie
+  requires:
+    - python
+    - pip
   commands:
     - pip check
 
