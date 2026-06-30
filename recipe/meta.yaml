@@ -22,7 +22,6 @@ requirements:
     - pip
     - cython
     - setuptools
-    - pytest-runner
   run:
     - python
 
