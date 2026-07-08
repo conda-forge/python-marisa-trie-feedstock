@@ -1,4 +1,4 @@
-{% set version = "1.2.1" %}
+{% set version = "1.4.1" %}
 
 package:
   name: marisa-trie
@@ -6,10 +6,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/m/marisa-trie/marisa_trie-{{ version }}.tar.gz
-  sha256: 3a27c408e2aefc03e0f1d25b2ff2afb85aac3568f6fa2ae2a53b57a2e87ce29d
+  sha256: 44ce3bdbeb7c950d463e460184fc3e18702df9ef0edb826bac672fd789fb1d20
 
 build:
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv
 
 requirements:
@@ -20,19 +20,24 @@ requirements:
   host:
     - python
     - pip
+    - cython
     - setuptools
-    - pytest-runner
   run:
     - python
 
 test:
   imports:
     - marisa_trie
+  requires:
+    - python
+    - pip
+  commands:
+    - pip check
 
 about:
   home: https://github.com/pytries/marisa-trie
   license_file: LICENSE
-  license: MIT
+  license: MIT AND (BSD-2-Clause OR LGPL-2.1-or-later)
   license_family: MIT
   summary: Static memory-efficient & fast Trie-like structures for Python (based on marisa-trie C++ library)
   dev_url: https://github.com/pytries/marisa-trie
@@ -43,3 +48,4 @@ extra:
     - kmike
     - superbobry
     - mariusvniekerk
+    - mgorny
