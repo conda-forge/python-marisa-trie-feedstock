@@ -273,5 +273,6 @@ Feedstock Maintainers
 
 * [@kmike](https://github.com/kmike/)
 * [@mariusvniekerk](https://github.com/mariusvniekerk/)
+* [@mgorny](https://github.com/mgorny/)
 * [@superbobry](https://github.com/superbobry/)
 
