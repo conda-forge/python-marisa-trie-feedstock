@@ -43,7 +43,11 @@ tests:
       source:
         - tests/
     script:
-      - pytest
+      env:
+        # increase hypothesis health check leniency
+        CI: "1"
+      content:
+        - pytest
 
 about:
   license_file: LICENSE
