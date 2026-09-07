@@ -43,6 +43,7 @@ about:
   documentation: https://marisa-trie.readthedocs.io/en/latest/
 
 extra:
+  feedstock-name: python-marisa-trie
   recipe-maintainers:
     - kmike
     - superbobry
