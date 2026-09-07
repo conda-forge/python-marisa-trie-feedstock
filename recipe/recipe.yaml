@@ -33,6 +33,17 @@ tests:
       imports:
         - marisa_trie
       pip_check: true
+  - requirements:
+      run:
+        - pytest
+        - hypothesis
+        - pytest-run-parallel
+        - readme_renderer
+    files:
+      source:
+        - tests/
+    script:
+      - pytest
 
 about:
   license_file: LICENSE
